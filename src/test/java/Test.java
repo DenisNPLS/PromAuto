@@ -104,5 +104,4 @@ public class Test {
         String accessDeniedText = driver.findElement(By.xpath("//*[contains(text(),'Доступ запрещен')]")).getText().trim();
         assertEquals("Доступ запрещен.", accessDeniedText);
     }
-
 }
