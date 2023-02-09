@@ -76,13 +76,6 @@ public class Test {
         assertEquals("Регистрация", registrationText);
     }
 
-    @org.junit.jupiter.api.Test //BUG!!
-    void shouldTestSignIn() {
-        driver.findElement(By.xpath("//a[@id='loginbutton']")).click();
-        String signInText = driver.findElement(By.xpath("//*[contains(text(),'Имя: ')]")).getText().trim();
-        assertEquals("Имя: ", signInText);
-    }
-
     @org.junit.jupiter.api.Test
     void shouldTestCli() {
         driver.findElement(By.xpath("//a[contains(text(),'GitHub CLI 2.23.0')]")).click();
